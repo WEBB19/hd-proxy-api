@@ -101,3 +101,6 @@ app.post('/incarnationCross', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`HD proxy API listening on port ${PORT}`);
 });
+app.get('/', (req, res) => {
+  res.send('HD Proxy API él!');
+});
